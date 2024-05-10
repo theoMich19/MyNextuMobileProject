@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyNextuMobileProject</string>
+    <string name="title_home">Home</string>
+    <string name="title_planets">Planets</string>
+    <string name="title_credits">Credits</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="come_back">Just back</string>
+    <string name="title_planets_link">Voir les planets</string>
+    <string name="terrain">terrain</string>
+    <string name="climate">climat</string>
+    <string name="population">population</string>
+    <string name="planet_details_image">Image de la planet</string>
+    <string name="back_to_list">Retour à la liste</string>
+</resources>

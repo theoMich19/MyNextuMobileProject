@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="fr.nextu.mynextumobileproject.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="fr.nextu.mynextumobileproject.ui.dashboard.DashboardFragment"
+        android:label="@string/title_planets"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/fragment_planet" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="fr.nextu.mynextumobileproject.ui.notifications.NotificationsFragment"
+        android:label="@string/title_credits"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/fragment_planet"
+        android:name="fr.nextu.mynextumobileproject.PlanetsFragment"
+        android:label="@string/title_planets"
+        tools:layout="@layout/fragment_planets">
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/navigation_dashboard" />
+
+    </fragment>
+
+
+</navigation>
